@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['7.4', '8.1', '8.3']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: Lint
+        run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+      - name: JS syntax
+        run: for f in assets/*.js; do node --check "$f"; done
+      - name: PHP/JS text folding parity
+        run: node tests/fold-parity.js
+
+  # Publishes a GitHub Release (with the installable zip) whenever the plugin header
+  # version on main has no release yet. Bump "Version:" to ship a new one.
+  release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Read version
+        id: v
+        run: echo "version=$(grep -m1 -oP '^\s*\*\s*Version:\s*\K[0-9.]+' linkyar.php)" >> "$GITHUB_OUTPUT"
+      - name: Build zip and release if new
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          if gh release view "v$V" >/dev/null 2>&1; then
+            # Rebuild the release if its tag points outside main (e.g. after a history rewrite).
+            if git merge-base --is-ancestor "v$V" HEAD 2>/dev/null; then
+              echo "v$V already released"; exit 0
+            fi
+            gh release delete "v$V" --cleanup-tag --yes
+            git tag -d "v$V" 2>/dev/null || true
+          fi
+          mkdir -p build
+          git archive --format=zip --prefix=linkyar/ -o build/linkyar.zip HEAD
+          awk -v v="$V" '$0 ~ "^## "v {f=1; next} /^## / {f=0} f' CHANGELOG.md > build/notes.md
+          gh release create "v$V" build/linkyar.zip \
+            --target "$GITHUB_SHA" --title "v$V" --notes-file build/notes.md --latest

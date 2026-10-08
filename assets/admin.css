@@ -1,0 +1,18 @@
+.linkyar-wrap .linkyar-lead { max-width: 780px; font-size: 14px; color: #50575e; line-height: 1.8; }
+.linkyar-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 18px 0; max-width: 900px; }
+.linkyar-stats > div { background: #fff; border: 1px solid #dcdcde; border-radius: 8px; padding: 14px 16px; display: grid; gap: 4px; }
+.linkyar-stats strong { font-size: 26px; line-height: 1.1; }
+.linkyar-stats span { color: #646970; font-size: 12px; }
+.linkyar-stats .is-bad strong { color: #d63638; }
+.linkyar-stats .is-good strong { color: #008a20; }
+.linkyar-rebuild { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 18px; color: #646970; }
+.linkyar-rebuild progress { width: 220px; height: 10px; }
+.linkyar-filter { display: flex; gap: 12px; align-items: center; margin: 14px 0 10px; }
+.linkyar-count { color: #646970; }
+.linkyar-table th.num, .linkyar-table td.num { text-align: center; width: 90px; }
+.linkyar-pill { display: inline-block; min-width: 28px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+.linkyar-pill.is-bad { background: #fcf0f1; color: #b32d2e; }
+.linkyar-pill.is-warn { background: #fcf9e8; color: #996800; }
+.linkyar-pill.is-good { background: #edfaef; color: #007017; }
+.linkyar-phrases code { display: inline-block; margin: 2px; padding: 1px 6px; border-radius: 4px; font-size: 12px; background: #f0f0f1; }
+.linkyar-phrases code.is-custom, .linkyar-phrases code.is-focus { background: #e7f0fa; }

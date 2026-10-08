@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Linkyar 1.0.0\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: linkyar\n"
+
+#, php-format
+msgid "%d inbound"
+msgstr "%d لینک ورودی"
+
+#, php-format
+msgid "%s pages have no linkable phrase yet (single-word titles and no focus keyword)."
+msgstr "%s صفحه هنوز عبارتی برای لینک‌گرفتن ندارند (عنوان تک‌کلمه‌ای و بدون کلمهٔ کلیدی)."
+
+msgid "All"
+msgstr "همه"
+
+msgid "All content types"
+msgstr "همهٔ انواع محتوا"
+
+msgid "Avg. inbound links"
+msgstr "میانگین لینک ورودی"
+
+msgid "Build link map"
+msgstr "ساخت نقشهٔ لینک‌ها"
+
+msgid "Comma-separated. Your Yoast / Rank Math focus keyword and the title are used automatically."
+msgstr "با ویرگول جدا کنید. کلمهٔ کلیدی کانونی Yoast یا Rank Math و عنوان خودکار استفاده می‌شوند."
+
+msgid "Copied"
+msgstr "کپی شد"
+
+msgid "Copy link"
+msgstr "کپی لینک"
+
+msgid "Every page should be reachable through internal links. Orphan pages get crawled less, rank worse and pass no authority. Open one, scan, and link to it from related content — the editor sidebar shows orphans first."
+msgstr "هر صفحه باید از راه لینک داخلی در دسترس باشد. صفحه‌های یتیم کمتر خزش می‌شوند، رتبهٔ ضعیف‌تری می‌گیرند و اعتباری منتقل نمی‌کنند. از محتوای مرتبط به آن‌ها لینک بدهید؛ نوار کناری ویرایشگر صفحه‌های یتیم را اول پیشنهاد می‌دهد."
+
+msgid "Find link opportunities"
+msgstr "پیدا کردن فرصت‌های لینک"
+
+msgid "Finds internal-link opportunities while you write, inserts them in one click and reports orphan pages. Persian-aware: matches across ي/ی, ZWNJ and diacritics."
+msgstr "هنگام نوشتن فرصت‌های لینک داخلی را پیدا می‌کند، با یک کلیک لینک می‌دهد و صفحه‌های یتیم را گزارش می‌کند. با درک درست فارسی: ي/ی، نیم‌فاصله و اِعراب."
+
+msgid "Inbound"
+msgstr "ورودی"
+
+msgid "Indexed pages"
+msgstr "صفحه‌های نمایه‌شده"
+
+msgid "Insert link"
+msgstr "لینک بده"
+
+msgid "Internal links"
+msgstr "لینک داخلی"
+
+#, php-format
+msgid "Internal links pointing to this post: %d"
+msgstr "لینک‌های داخلی به این مطلب: %d"
+
+#, php-format
+msgid "Last full rebuild: %s ago. Posts update automatically when saved."
+msgstr "آخرین بازسازی کامل: %s پیش. مطالب با هر ذخیره خودکار به‌روز می‌شوند."
+
+msgid "Link report"
+msgstr "گزارش لینک‌ها"
+
+msgid "Linked"
+msgstr "لینک شد"
+
+msgid "Linked from phrases"
+msgstr "عبارت‌های لینک‌گیر"
+
+msgid "Linkyar"
+msgstr "لینک‌یار"
+
+msgid "Linkyar is active. Build your internal link map once to find orphan pages and rank suggestions."
+msgstr "لینک‌یار فعال است. یک بار نقشهٔ لینک‌های داخلی را بسازید تا صفحه‌های یتیم پیدا شوند و پیشنهادها اولویت‌بندی شوند."
+
+msgid "Linkyar – Internal Link Assistant"
+msgstr "لینک‌یار – دستیار لینک‌سازی داخلی"
+
+msgid "Linkyar – internal links"
+msgstr "لینک‌یار – لینک‌سازی داخلی"
+
+msgid "Most linked"
+msgstr "پرلینک‌ترین‌ها"
+
+msgid "No new opportunities. Add more text, or add keywords to your other posts."
+msgstr "فرصت تازه‌ای پیدا نشد. متن بیشتری بنویسید یا برای مطالب دیگرتان عبارت لینک‌گیر تعریف کنید."
+
+msgid "No other post links here yet — this post is an orphan."
+msgstr "هنوز هیچ مطلبی به اینجا لینک نداده؛ این صفحه یتیم است."
+
+msgid "None — add a focus keyword or Linkyar phrases so other posts can link here."
+msgstr "هیچ — کلمهٔ کلیدی یا عبارت لینک‌یار اضافه کنید تا مطالب دیگر بتوانند به اینجا لینک بدهند."
+
+msgid "Not built yet — takes a few seconds for most sites."
+msgstr "هنوز ساخته نشده؛ برای بیشتر سایت‌ها چند ثانیه طول می‌کشد."
+
+msgid "Nothing here. Nice work."
+msgstr "چیزی اینجا نیست. عالی!"
+
+msgid "Orphan"
+msgstr "یتیم"
+
+msgid "Orphan pages"
+msgstr "صفحهٔ یتیم"
+
+msgid "Orphans (0 inbound)"
+msgstr "یتیم‌ها (۰ ورودی)"
+
+msgid "Outbound"
+msgstr "خروجی"
+
+msgid "Page"
+msgstr "صفحه"
+
+msgid "Phrases that should link to this post"
+msgstr "عبارت‌هایی که باید به این مطلب لینک شوند"
+
+#, php-format
+msgid "Reading %1$d of %2$d…"
+msgstr "در حال خواندن %1$d از %2$d…"
+
+msgid "Reading your text…"
+msgstr "در حال خواندن متن…"
+
+msgid "Rebuild link map"
+msgstr "بازسازی نقشهٔ لینک‌ها"
+
+msgid "Save phrases"
+msgstr "ذخیرهٔ عبارت‌ها"
+
+msgid "Saved"
+msgstr "ذخیره شد"
+
+msgid "Scan again"
+msgstr "بررسی دوباره"
+
+#, php-format
+msgid "Showing %1$s of %2$s"
+msgstr "نمایش %1$s از %2$s"
+
+msgid "Skip"
+msgstr "رد کردن"
+
+msgid "Something went wrong. Save the post and try again."
+msgstr "مشکلی پیش آمد. مطلب را ذخیره کنید و دوباره امتحان کنید."
+
+msgid "The rebuild stopped. Reload the page and try again."
+msgstr "بازسازی متوقف شد. صفحه را تازه کنید و دوباره امتحان کنید."
+
+msgid "The text changed; scan again."
+msgstr "متن تغییر کرده؛ دوباره بررسی کنید."
+
+msgid "Tip: build the link map once under Tools → Linkyar so orphan pages get priority."
+msgstr "نکته: یک بار از «ابزارها ← لینک‌یار» نقشهٔ لینک‌ها را بسازید تا صفحه‌های یتیم اولویت بگیرند."
+
+msgid "Type"
+msgstr "نوع"
+
+msgid "View"
+msgstr "نمایش"
+
+msgid "Weak (1–2 inbound)"
+msgstr "ضعیف (۱ تا ۲ ورودی)"
+
+msgid "Without phrases"
+msgstr "بدون عبارت"
+
+msgid "focus keyword"
+msgstr "کلمهٔ کلیدی"
+
+msgid "title"
+msgstr "عنوان"
+
+msgid "your phrase"
+msgstr "عبارت شما"

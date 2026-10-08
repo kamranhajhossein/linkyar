@@ -1,0 +1,18 @@
+.linkyar-scan { width: 100%; justify-content: center; margin-bottom: 12px; }
+.linkyar-stat { margin: 0 0 12px; padding: 8px 10px; border-radius: 6px; background: #f0f6fc; color: #1d2327; font-size: 12px; line-height: 1.6; }
+.linkyar-stat.is-orphan { background: #fcf0f1; color: #8a2424; }
+.linkyar-tip, .linkyar-empty { color: #646970; font-size: 12px; line-height: 1.7; }
+.linkyar-card { border: 1px solid #dcdcde; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; background: #fff; transition: opacity .2s, border-color .2s; }
+.linkyar-card.is-done { border-color: #68de7c; background: #f6fef7; }
+.linkyar-card.is-stale { border-color: #f0c33c; }
+.linkyar-card-head { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
+.linkyar-target { font-weight: 600; text-decoration: none; line-height: 1.5; }
+.linkyar-badge { flex: none; font-size: 11px; padding: 1px 7px; border-radius: 10px; background: #f0f0f1; color: #50575e; white-space: nowrap; }
+.linkyar-badge.is-orphan { background: #d63638; color: #fff; }
+.linkyar-context { margin: 6px 0 8px; font-size: 12.5px; line-height: 1.9; color: #50575e; }
+.linkyar-context mark { background: #fff3c4; color: #1d2327; padding: 1px 3px; border-radius: 3px; font-weight: 600; }
+.linkyar-card-foot { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+.linkyar-source { margin-inline-end: auto; font-size: 11px; color: #8c8f94; }
+.linkyar-ok { color: #007017; font-weight: 600; font-size: 12px; }
+.linkyar-warn { color: #996800; font-size: 12px; }
+.linkyar-classic textarea { margin-top: 6px; }
